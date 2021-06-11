@@ -24,11 +24,11 @@ Nodo::Nodo(int _valor){
     this->sig=NULL;
 }
 
-void Nodo::darValor(int _valor){
+void Nodo::darValor(int _valor){    //setValue
     this->valor=_valor;
 }
 
-int Nodo::mostValor(){
+int Nodo::mostValor(){              //getValue
     return valor;
 }
 
@@ -41,7 +41,8 @@ Nodo* Nodo::mostSig(){
 }
 
 Nodo::~Nodo(){
-    //
+    cout << "Nodo borrado!" << endl;
 }
 
 #endif // NODO_H
+
